@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Titanic survival prediction by Waqar Farrukh for Machine Learning Assignment 2.">
+  <title>Waqar Farrukh | Titanic Prediction</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="course">AIC354 · Assignment 2</p>
+      <h1>Titanic Survival Prediction</h1>
+      <p>Waqar Farrukh · FA24-BSE-118 · BSE-A</p>
+    </header>
+    <section id="titanic" aria-labelledby="titanic-title">
+      <div class="section-header"><h2 id="titanic-title">Titanic Survival Prediction</h2><p id="titanic-accuracy">Loading model…</p></div>
+      <form id="titanic-form">
+        <div class="fields">
+          <label>Passenger class<select name="PClass"><option>First</option><option>Second</option><option>Third</option></select></label>
+          <label>Gender<select name="Gender"><option>Male</option><option>Female</option></select></label>
+          <label>Siblings or spouses aboard<select name="Sibling"><option>Zero</option><option>One</option><option>Two</option><option>Three</option></select></label>
+          <label>Port of embarkation<select name="Embarked"><option>Southampton</option><option>Cherbourg</option><option>Queenstown</option></select></label>
+        </div>
+        <button type="submit" disabled>Predict survival</button>
+      </form>
+      <p class="result" id="titanic-result" role="status" aria-live="polite" hidden></p>
+      <p class="note">Educational model using the supplied 100-row dataset.</p>
+    </section>
+    <footer>Training · Testing · Application · Feedback</footer>
+  </main>
+</body>
+</html>

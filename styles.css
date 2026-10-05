@@ -1,0 +1,24 @@
+:root{font-family:Arial,Helvetica,sans-serif;color:#162036;background:#f2f5fb;font-size:16px;color-scheme:light}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;padding:56px 20px}
+main{max-width:780px;margin:0 auto}
+.course{font-size:.9rem;font-weight:700;letter-spacing:.05em;color:#456086;margin:0 0 12px}
+h1{font-size:2rem;line-height:1.2;letter-spacing:-.03em;margin:0 0 28px}
+nav{display:flex;gap:8px;border-bottom:1px solid #cbd5e1;margin-bottom:24px}
+nav a{display:block;color:#42526b;padding:13px 16px;text-decoration:none;font-weight:700;border-bottom:3px solid transparent}
+nav a[aria-current="page"]{color:#174eb6;border-bottom-color:#245bce}
+section{background:white;border:1px solid #d7e0ed;padding:30px;border-radius:12px;box-shadow:0 8px 30px #1c335408}
+[hidden]{display:none!important}
+h2{font-size:1.3rem;line-height:1.35;margin:0 0 8px}
+.section-header p{margin:0 0 27px;color:#54657d;font-size:.95rem}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:22px 20px}
+label{display:flex;flex-direction:column;gap:9px;font-size:.95rem;font-weight:600;line-height:1.4}
+input,select{font:inherit;font-weight:400;width:100%;min-height:47px;padding:11px 12px;border:1px solid #b9c7db;border-radius:6px;color:#162036;background:white}
+input:focus,select:focus,a:focus-visible,button:focus-visible{outline:3px solid #a9c8ff;outline-offset:2px}
+button{margin-top:27px;width:100%;min-height:48px;border:0;border-radius:6px;background:#245bce;color:white;font:inherit;font-weight:700;cursor:pointer;padding:12px}
+button:hover{background:#184aac}
+button:disabled{opacity:.5;cursor:wait}
+.result{margin:23px 0 0;font-size:1.15rem;font-weight:700;line-height:1.5;padding:17px 0;border-top:1px solid #d7e0ed}
+.note{color:#62718a;font-size:.9rem;line-height:1.6;margin:23px 0 0}
+footer{color:#697b96;text-align:center;font-size:.875rem;margin-top:25px;line-height:1.7}
+@media(max-width:540px){body{padding:28px 14px}h1{font-size:1.65rem}section{padding:23px 20px}.fields{grid-template-columns:1fr}nav a{padding:12px 9px;font-size:.94rem}}
